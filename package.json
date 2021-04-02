@@ -1,0 +1,29 @@
+{
+  "name": "jobrouter-api-definitions",
+  "types": "index.d.ts",
+  "version": "5.1.0-beta.3",
+  "description": "Type definitions for the JobRouter® JavaScript API",
+  "author": "JobRouter AG",
+  "homepage": "https://github.com/KeeFORCE/jobrouter-api-definitions#readme",
+  "bugs": {
+    "url": "https://github.com/KeeFORCE/jobrouter-api-definitions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeeFORCE/jobrouter-api-definitions.git"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Wertschöpfer IT GmbH <contact@wertschoepfer.it> (https://wertschoepfer.it/)",
+    "Jason Spann <jspann@keeforce.com> (https://keeforce.com/)",
+    "Eric Nemchik <enemchik@keeforce.com> (https://keeforce.com/)"
+  ],
+  "dependencies": {
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0"
+  }
+}
