@@ -45,8 +45,8 @@ declare const jr_get_subtable_display_value: (subtableViewName: string, rowId: n
 declare const jr_add_subtable_row: (subtableViewName: string, numberOfRows: number | Object | Object[], ignoreMaxRows: boolean, finishCallback: (addedRows: number) => void, customHandler?: CustomErrorHandler) => void;
 declare const jr_remove_subtable_row: (subtableViewName: string, rowId: number | number[], ignoreMinRows: boolean) => void;
 declare const jr_copy_subtable_row: (subtableViewName: string, rowId: number | number[]) => void;
-declare const jr_hide_subtable_column: (subtableViewName: string, columnId: string | string[], radioValue: string) => void;
-declare const jr_show_subtable_column: (subtableViewName: string, columnId: string | string[], radioValue: string) => void;
+declare const jr_hide_subtable_column: (subtableViewName: string, columnId: string | string[], radioValue?: string) => void;
+declare const jr_show_subtable_column: (subtableViewName: string, columnId: string | string[], radioValue?: string) => void;
 declare const jr_hide_subtable_row: (subtableViewName: string, rowId: number) => void;
 declare const jr_show_subtable_row: (subtableViewName: string, rowId: number) => void;
 declare const jr_get_subtable_count: (subtableViewName: string, customHandler?: CustomErrorHandler) => number;
