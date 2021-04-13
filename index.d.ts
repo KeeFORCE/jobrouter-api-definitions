@@ -20,10 +20,10 @@ declare const jr_get_display_value: (id: ElementId, customHandler?: CustomErrorH
 declare const jr_reset_value: (id: ElementId, customHandler?: CustomErrorHandler) => void;
 declare const jr_set_required: (id: ElementId, value?: boolean, customHandler?: CustomErrorHandler) => void;
 declare const jr_is_required: (id: ElementId, customHandler?: CustomErrorHandler) => boolean;
-declare const jr_set_label: (id: ElementId, label: string, radioValue: string, customHandler?: CustomErrorHandler) => void;
-declare const jr_get_label: (id: ElementId, radioValue: string, customHandler?: CustomErrorHandler) => string;
-declare const jr_set_label2: (id: ElementId, label: string, radioValue: string, customHandler?: CustomErrorHandler) => void;
-declare const jr_get_label2: (id: ElementId, radioValue: string, customHandler?: CustomErrorHandler) => string;
+declare const jr_set_label: (id: ElementId, label: string, radioValue?: string, customHandler?: CustomErrorHandler) => void;
+declare const jr_get_label: (id: ElementId, radioValue?: string, customHandler?: CustomErrorHandler) => string;
+declare const jr_set_label2: (id: ElementId, label: string, radioValue?: string, customHandler?: CustomErrorHandler) => void;
+declare const jr_get_label2: (id: ElementId, radioValue?: string, customHandler?: CustomErrorHandler) => string;
 declare const jr_show: (obj: string | string[]) => void;
 declare const jr_hide: (obj: string | string[]) => void;
 declare const jr_is_visible: (id: ElementId, customHandler?: CustomErrorHandler) => boolean;
@@ -56,8 +56,8 @@ declare const jr_sum_subtable_column: (subtableViewName: string, columnName: str
 declare const jr_loop_table: (subtableViewName: string, callback: (subtableView: string, currentRow: number) => void, customHandler?: CustomErrorHandler) => void;
 declare const jr_set_column_label: (elementName: string, columnName: string, label: string, customHandler?: CustomErrorHandler) => void;
 declare const jr_get_column_label: (elementName: string, columnName: string, customHandler?: CustomErrorHandler) => string;
-declare const jr_set_cell_label2: (subtableViewName: string, rowId: number, columnName: string, label: string, radioValue: string, customHandler?: CustomErrorHandler) => void;
-declare const jr_get_cell_label2: (subtableViewName: string, rowId: number, columnName: string, radioValue: string, customHandler?: CustomErrorHandler) => string;
+declare const jr_set_cell_label2: (subtableViewName: string, rowId: number, columnName: string, label: string, radioValue?: string, customHandler?: CustomErrorHandler) => void;
+declare const jr_get_cell_label2: (subtableViewName: string, rowId: number, columnName: string, radioValue?: string, customHandler?: CustomErrorHandler) => string;
 declare const jr_get_table_count: (tableName: string, customHandler?: CustomErrorHandler) => number;
 declare const jr_get_table_max_id: (tableName: string, customHandler?: CustomErrorHandler) => number;
 declare const jr_set_table_background_color: (tableName: string, rowId: number | "*", columnName: string, color: string, customHandler?: CustomErrorHandler) => void;
