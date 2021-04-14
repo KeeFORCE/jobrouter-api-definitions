@@ -12,6 +12,11 @@ type Stamp = {
     color: string
     onStamp?: ((stamp: Stamp, x: number, y: number) => void)
 };
+type DialogReturnObject = {
+  status: string;
+  result?: Record<string, any>;
+  message?: string;
+};
 
 declare const jr_execute: (action: StepAction | "reserve") => void;
 declare const jr_get_value: (id: ElementId, customErrorHandler?: CustomErrorHandler) => any;
@@ -74,7 +79,7 @@ declare const jr_set_steplabel: (label: string) => void;
 declare const jr_get_steplabel: () => string;
 declare const jr_print: (callback?: () => void) => void;
 declare const jr_get_table_value: (tableName: string, rowId: number, columnName: string, customHandler?: CustomErrorHandler) => any;
-declare const jr_execute_dialog_function: (functionName: string, userParameters?: Object, onSuccessCallback?: (returnObject: { result: Object }) => void, onErrorCallback?: (error: string) => void) => void;
+declare const jr_execute_dialog_function: (functionName: string, userParameters?: Object, onSuccessCallback?: (returnObject: DialogReturnObject) => void, onErrorCallback?: (returnObject: DialogReturnObject) => void) => void;
 declare const jr_set_dialog_unchanged: () => void;
 declare const jr_has_dialog_changed: () => boolean;
 declare const jr_enable_dialog_changecheck: () => void;
