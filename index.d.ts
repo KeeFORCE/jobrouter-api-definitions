@@ -314,19 +314,19 @@ declare const jr_get_subtable_checked_row_ids: (
 ) => number[];
 declare const jr_notify_success: (
   message: string,
-  timeoutInSeconds: number
+  timeoutInSeconds?: number
 ) => void;
 declare const jr_notify_info: (
   message: string,
-  timeoutInSeconds: number
+  timeoutInSeconds?: number
 ) => void;
 declare const jr_notify_warn: (
   message: string,
-  timeoutInSeconds: number
+  timeoutInSeconds?: number
 ) => void;
 declare const jr_notify_error: (
   message: string,
-  timeoutInSeconds: number
+  timeoutInSeconds?: number
 ) => void;
 declare const jr_set_window_title: (title: string) => void;
 declare const jr_viewer_stamp_create: (
