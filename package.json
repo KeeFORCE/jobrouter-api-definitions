@@ -1,7 +1,7 @@
 {
   "name": "jobrouter-api-definitions",
   "types": "index.d.ts",
-  "version": "5.1.14-fork.1",
+  "version": "5.1.14-fork.2",
   "description": "Type definitions for the JobRouter® JavaScript API",
   "author": "JobRouter AG",
   "homepage": "https://github.com/KeeFORCE/jobrouter-api-definitions#readme",
