@@ -144,14 +144,14 @@ declare const jr_get_subtable_display_value: (
 declare const jr_add_subtable_row: (
   subtableViewName: string,
   numberOfRows: number | Object | Object[],
-  ignoreMaxRows: boolean,
+  ignoreMaxRow?: boolean,
   finishCallback?: (addedRows: number) => void,
   customHandler?: CustomErrorHandler
 ) => void;
 declare const jr_remove_subtable_row: (
   subtableViewName: string,
   rowId: number | number[],
-  ignoreMinRows: boolean
+  ignoreMinRows?: boolean
 ) => void;
 declare const jr_copy_subtable_row: (
   subtableViewName: string,
