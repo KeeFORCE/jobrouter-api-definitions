@@ -2,8 +2,7 @@
 
 Changes:
 
-- Changed file name from api.d.ts to index.d.ts
-- Include "types" parameter in package.json with path to index.d.ts
+- To view our commit history, see our github repository: [Click Here](https://github.com/KeeFORCE/jobrouter-api-definitions/commits/main)
 
 # JobRouter JavaScript API
 
